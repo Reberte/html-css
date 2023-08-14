@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas</title>
+    <style>
+        h1 {
+            background-color: lightgray;
+            height: 300px;
+            width: 300px;
+
+            /*
+            border-width: 10px;
+            border-style: solid;
+            border-color: darkslategray;
+
+            shorthand do border*/
+
+            border: 10px solid darkslategray;
+
+            /*
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            
+            shorthand do padding*/
+
+            padding: 10px 10px 10px 10px;/*ou por ter todos os lados igual simplifique padding: 10px;*/
+
+            /*
+            margin-top: 20px;
+            margin-right: 20px;
+            margin-bottom: 40px;
+            margin-left: 20px;
+
+            shorthand do margin*/
+
+            margin: 20px 20px 40px 20px; /* se todos os dados forem do mesmo tamanho seimplifique margin: 40px;*/
+
+            /*    
+            outline-width: 5px;
+            outline-style: dashed;
+            outline-color: salmon;
+
+            shorthand do outline*/
+
+            outline: 5px dashed salmon;
+
+        }
+
+        a {
+            border-width: 10px;
+            border-style: solid;
+            border-color: red;
+            
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Exemplo e caixa box-level</h1>
+    <p>Parágrafo também são exemplo de box-level, mas os <a href="#">links são exemplos de caixas inline-level</a>. Vamos ver como tudo isso funciona.</p>
+</body>
+</html>
+<!--
+
+    Propriedades de borda:
+
+   largura	->	border-width: 10px;
+
+   estilo	->	border-style: solid;	 (sólida)
+					     : dashed;	 (tracejada)
+					     : dotted;	 (pontilhada)
+					     : double;	 (dupla)
+					     : groove;	 (em 3d)
+
+   cor 	->	border-color: red;
+
+  - Shorthand: 
+
+	border: 10px solid red (largura, estilo, cor)
+
+
+Propriedades de padding:
+
+	padding-top: 10px;	   (de topo)
+	padding-right: 10px;	   (à direita)
+	padding-bottom: 10px    (de baixo)
+	padding-left: 10px;	   (à esquerda)
+
+  - Shorthand: 
+	
+	padding: 15px 10px 15px 10px;    (sent. horário: top, right, bottom, left)
+	padding: 10px; 		(os 4 lados iguais a 10px)
+	padding: 15px 10px;	 (cima e baixo 15px / esquerda e direita 10px)
+
+		   
+Acessar DevTools do Chrome: botão direito no corpo do site -> inspecionar
+
+box-level = block-level
+-->

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        body {
+            /*font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;*/
+            /*font-size: 1em;*/
+
+                /*
+            Medidas Absolutas
+            cm, mm, in, px, pt, pc
+
+            Medidas Relativas
+            em, ex, rem, vw, vh, %
+
+            16px geralmente  = 1em
+        */
+
+            font-family: 'Work Sans', Arial, Helvetica, sans-serif;
+            font-size: 1em;
+
+            /* font-weght -> lighter normal bold bolder */
+        }
+
+       h1 {
+        /*font-family: 'Work Sans', sans-serif;
+        font-weight: bolder;
+        font-size: 3em;
+        font-style: italic;*/
+        /* 
+        - fontstyle -> font-weight -> font-size ->font-family
+          */
+          font: italic bolder 3em 'Work Sans', sans-serif;
+       }
+
+       h2 {
+        font: bolde 2em 'Work Sans';
+       }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, repudiandae dolorem excepturi, dolore itaque quibusdam soluta rerum natus placeat consequuntur adipisci quod aspernatur numquam tempora architecto mollitia ducimus praesentium at. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis commodi adipisci corrupti aspernatur, eius delectus quam voluptatum! Est mollitia ullam tenetur voluptatem distinctio illo dicta fugit? Quaerat tenetur cumque maxime. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, aliquam doloribus iusto aspernatur tenetur, veniam repellat labore sequi nam consequatur aut id laboriosam. Quam eveniet corrupti, dolore eum eligendi libero?</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae omnis provident esse illum repudiandae placeat amet fugit molestias quaerat. Error minus perspiciatis amet voluptas quas voluptates earum mollitia iure autem?</p>
+    <h2>Subtítulo de exercício</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, magnam? Illum rerum ut similique veniam porro asperiores tenetur magnam accusantium tempore nam quos, voluptatem quas error aspernatur mollitia modi perferendis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, omnis voluptas quia incidunt beatae molestiae asperiores corporis quae id dicta vero eveniet vel dolor quod placeat, dolores animi magni. Maiores.</p>
+</body>
+</html>
