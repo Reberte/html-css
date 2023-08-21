@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astronauta no Espaço Desafio D011 - POSITION RELATIVE e POSITION ABSOLUTE</title>
+
+    <style>
+        #espaco {
+            background-image: url('imagens/espaco.jpg');
+            background-size: 100% 100%;
+            position: relative; /*A posição é referente a ele mesmo */
+            height: 97vh;
+        }
+
+        #astronauta {
+            background-image: url('imagens/astronauta.png');
+            background-size: 100% 100%;
+            position: absolute; /*A posição é relatico a seu pai, no caso a div id espaco */
+            height: 408px;
+            width: 400px;
+            top: 50%;
+            left: 50%;
+
+             transform: translate(-50%, -50%);
+
+        }
+
+    </style>
+</head>
+<body>
+
+    <div id="espaco">
+        <div id="astronauta"></div>
+    </div>
+    
+</body>
+</html>
