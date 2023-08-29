@@ -31,7 +31,7 @@
 
         header>h1 {
             padding-top: 50px;
-            font-variant: small-caps;
+            font-variant: small-caps;/*small-caps todos as letras estaram Maiúsculas, mas a primeira letra da palavra ficará maior que as demais*/
             font-family: var(--fonte2);
             font-size: 10vw;
         }
@@ -79,7 +79,7 @@
         }
 
         section.imagem>p {
-            display: inline-block;
+            display: inline-block;/* Vai virar um caixa "box" que vai se adaptar ao tamanho do conteúdo*/
             padding: 5px;
             background-color: rgba(0, 0, 0, 0.514);
             text-shadow: 1px 1px 0px black;
