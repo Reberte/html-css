@@ -14,3 +14,10 @@ media	="print"   	-> para impressoras;
 		="screen"	-> para monitores de computadores, tablets e smartphones;
 		="handheld"	-> para dispositivos de mão;
 		="all"		-> para todos os tipos de mídia.
+
+
+Media Query é igual Media Type e Media Fitchers		
+
+Media Type é: Tipos de Media, 
+
+Media Fitchers é: Caracteristicas de Media
