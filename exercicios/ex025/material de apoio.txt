@@ -268,3 +268,40 @@ Atributos do select:
 selected:
 
 O atributo selected serve para definirmos uma opção inicial padrão, ele deve ser inserido dentro da tag de abertura do option que você deseja definir como padrão. Dessa forma, quando a página com o elemento select for carregada, essa opção escolhida já vai aparecer por padrão selecionada no componente de entrada select, ficando a critério do usuário alterar a opção ou manter a padrão determinada por você.
+
+
+---======= 03/10/2023
+
+
+MATERIAL DE APOIO
+
+Output:
+
+	<output>	</output>
+
+    - Não envia dados, apenas mostra algum tipo de resultado na tela.
+
+Ex: <form action="cadastro php" method="get" autocomplete="on">
+		<p>
+			<label for="in1">Número 1: </label>
+			<input type="number" name="n1" id="in1" min="0" max="50" required
+			oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
+		</p>
+
+		<p>
+			<label for="in2">Número 2: </label>
+			<input type="number" name="n2" id="in2" min="0" max="50" required
+                         oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
+		</p>
+
+		<p>
+			<label for="isoma">Soma: </label>
+			<output name="soma" id="isoma">0</output>
+			(Valor inicial "0", depois será mostrado a soma entre o Número 1 e o Número 2)
+		</p>
+
+		<p>
+			<input type="submit" value="Enviar">
+			<input type="reset" value="Limpar">
+		</p>
+	 </form>
