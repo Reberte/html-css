@@ -41,8 +41,8 @@ img {
   margin: auto;
 }
 
-img#phone { display: block; }
-img#tablet { display: none; }
-img#print { display: none; }
-img#pc { display:none; }
-img#tv { display: none; }
+img#phone { display: block; } /*Libera a imagem do CELULAR*/
+img#tablet { display: none; } /*Não exibe a imagem do TABLET*/
+img#print { display: none; } /*Não exibe a imagem da IMPRESSORA*/
+img#pc { display:none; } /*Não exibe a imagem do PC*/
+img#tv { display: none; } /*Não exibe a imagem da TV*/
