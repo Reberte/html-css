@@ -1,2 +1,86 @@
 @charset "UTF-8";
 
+/* Typical Device Breakpoints 
+------------------------------
+Pequenas telas: até 600px
+Celular: de 600px até 768px
+Tablet: 768px até 992px
+Desktop: 992px até 1200px
+Grandes telas: acima de 1200px
+
+*/
+/* IMPRESSÃO */
+@media print {
+  * {
+    font-family: 'Courier New', Courier, monospace;
+  }
+
+  body {
+    background-image: url(../imagens/back-print.jpg);/* Desnecessário - o backgroud não sai na impressão */
+  }
+
+  main {
+    width: 90vw;
+    border: 2px solid black;
+  }
+
+  main::after {
+    content: 'Essa impressão foi feita através do site www.cursoemvideo.com';
+    text-decoration: overline;
+  }
+  main h1 {
+    text-shadow: none;
+    color: black;
+  }
+
+  img#phone { display: none; } /*Libera a imagem do CELULAR*/
+  img#tablet { display: none; } /*Não exibe a imagem do TABLET*/
+  img#print { display: block; } /*Não exibe a imagem da IMPRESSORA*/
+  img#pc { display: none; } /*Não exibe a imagem do PC*/
+  img#tv { display: none; } /*Não exibe a imagem da TV*/
+
+}
+/* TABLET */
+@media screen and (min-width: 768px) and (max-width: 992px){
+  body {
+    background-image: url(../imagens/back-tablet.jpg);
+  }
+
+  img#phone { display: none; } /*Libera a imagem do CELULAR*/
+  img#tablet { display: block; } /*Não exibe a imagem do TABLET*/
+  img#print { display: none; } /*Não exibe a imagem da IMPRESSORA*/
+  img#pc { display:none; } /*Não exibe a imagem do PC*/
+  img#tv { display: none; } /*Não exibe a imagem da TV*/
+}
+/* DESCKTOP */
+@media screen and (min-width: 992px) and (max-width: 1200px){
+
+  body {
+    background-image: url(../imagens/back-pc.jpg);
+  }
+
+  img#phone { display: none; } /*Libera a imagem do CELULAR*/
+  img#tablet { display: none; } /*Não exibe a imagem do TABLET*/
+  img#print { display: none; } /*Não exibe a imagem da IMPRESSORA*/
+  img#pc { display: block; } /*Não exibe a imagem do PC*/
+  img#tv { display: none; } /*Não exibe a imagem da TV*/
+
+}
+/* GRANDES TELAS */
+@media screen and (min-width: 1200px){
+
+  body {
+    background-image: url(../imagens/back-tv.jpg);
+  }
+
+  main {
+    width: 700px;
+  }
+
+  img#phone { display: none; } /*Libera a imagem do CELULAR*/
+  img#tablet { display: none; } /*Não exibe a imagem do TABLET*/
+  img#print { display: none; } /*Não exibe a imagem da IMPRESSORA*/
+  img#pc { display:none; } /*Não exibe a imagem do PC*/
+  img#tv { display: block; } /*Não exibe a imagem da TV*/
+
+}
